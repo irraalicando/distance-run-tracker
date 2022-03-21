@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snack/snack.dart';
 
-import '../constants/theme.dart';
-
 class ErrorMessage extends StatelessWidget {
   final String message;
   final BuildContext context;

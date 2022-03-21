@@ -1,5 +1,5 @@
-class UIStringConstants {
-  UIStringConstants._();
+class UiStringConstants {
+  UiStringConstants._();
 
   static const String appTitle = "Distance Run Tracker";
 

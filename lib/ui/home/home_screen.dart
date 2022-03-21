@@ -16,7 +16,7 @@ import '../login/login_screen.dart';
 import 'distance_list_widget.dart';
 
 class HomeScreen extends StatefulWidget {
-  static String id = UIStringConstants.homeScreenId;
+  static String id = UiStringConstants.homeScreenId;
 
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       primary: true,
       appBar: AppBar(
-        title: const Text(UIStringConstants.appTitle),
+        title: const Text(UiStringConstants.appTitle),
         actions: [
           IconButton(
               onPressed: () {

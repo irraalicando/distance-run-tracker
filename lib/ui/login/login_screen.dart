@@ -13,7 +13,7 @@ import '../constants/theme.dart';
 import '../home/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
-  static String id = UIStringConstants.loginScreenId;
+  static String id = UiStringConstants.loginScreenId;
 
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -106,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Column(
       children: [
         Icon(Icons.directions_run, color: AppColors.primaryColor, size: MediaQuery.of(context).size.width/1.5,),
-        const TitleTextWidget(title: UIStringConstants.appTitle),
+        const TitleTextWidget(title: UiStringConstants.appTitle),
       ],
     );
   }

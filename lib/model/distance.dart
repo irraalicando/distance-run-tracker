@@ -27,13 +27,19 @@ class Distance {
     int timestamp = 0;
     try {
       user = doc.get('login');
-    } catch (e) {}
+    } catch (e) {
+      rethrow;
+    }
     try {
       distanceInKm = doc.get('distance_in_km');
-    } catch (e) {}
+    } catch (e) {
+      rethrow;
+    }
     try {
       timestamp = doc.get('timestamp');
-    } catch (e) {}
+    } catch (e) {
+      rethrow;
+    }
     return Distance(
       id: doc.id,
       user: user,

@@ -21,10 +21,14 @@ class FirestoreUser {
     int timestamp = 0;
     try {
       tempName = doc.get('name');
-    } catch (e) {}
+    } catch (e) {
+      rethrow;
+    }
     try {
       timestamp = doc.get('timestamp');
-    } catch (e) {}
+    } catch (e) {
+      rethrow;
+    }
     return FirestoreUser(
       id: doc.id,
       tempName: tempName,
